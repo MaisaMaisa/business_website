@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="./css/livio.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="menu">
+    <h3>menu</h3>
+  </div>
+
+  <div class="navBar">
+
+    <div class="bubble bubble1">
+      <a href="">
+        <h6>home</h6>
+      </a>
+    </div>
+
+    <div class="bubble bubble2">
+      <a href="">
+        <h6>gallery</h6>
+      </a>
+    </div>
+
+    <div class="bubble bubble3">
+      <a href="">
+        <h6>contact</h6>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $('.navBar').hide();
+
+      $('.menu').click(function() {
+        $('.bubble').hide();
+        $('.navBar').toggle(0, function() {
+          $('.bubble1').fadeIn(1000, 'linear');
+          $('.bubble2').delay(200).fadeIn(1000, 'linear');
+          $('.bubble3').delay(450).fadeIn(1000, 'linear');
+        })
+      });
+
+    });
+  </script>
+</body>
+
+</html>
