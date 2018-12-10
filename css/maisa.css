@@ -1,0 +1,34 @@
+.body {
+    background-color: yellow;
+    
+}
+
+
+
+.bigDuck {
+    position: fixed;
+    right: 200px;
+}
+
+#theDuck {
+    
+    border-style: solid;
+    border-color: red;
+    padding: 50px; 
+    text-align: center;
+    height: 500px
+}
+
+#about {
+    border-style: dotted;
+    margin: 40px;
+    padding: 50px; 
+    text-align: center;
+}
+
+#who {
+    border-style: groove;
+    margin: 40px;
+    padding: 10px; 
+    text-align: center;
+}
