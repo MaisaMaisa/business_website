@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="./css/livio.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="menu">
+    <h3>menu</h3>
+  </div>
+
+  <div class="navBar">
+
+    <div class="menu1">
+      <a href="">
+        <h6>home</h6>
+      </a>
+    </div>
+
+    <div class="menu2">
+      <a href="">
+        <h6>gallery</h6>
+      </a>
+    </div>
+
+    <div class="menu3">
+      <a href="">
+        <h6>contact</h6>
+      </a>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <center>
+    <h1 class="contactTitle">Ask us something or come and see us</h1>
+  </center>
+  <div class="formBlock">
+
+    <div class="left">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil praesentium tenetur, ut similique, minus facilis at distinctio, quisquam aliquam voluptatem nobis. Fugiat fugit, et ex nihil dolores numquam quos, repudiandae. Lorem ipsum
+        dolor
+        sit amet, consectetur adipisicing elit. Incidunt reprehenderit, fugit ut minus neque adipisci, officiis nostrum quo quidem, voluptatibus, harum non est repellendus nemo itaque cupiditate dolor cum mollitia. Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Neque ducimus repellendus quae expedita ipsum facilis quaerat perferendis inventore odio quas? Numquam unde quod commodi sapiente, voluptates doloremque tempora, nisi vero.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.519534091063!2d4.898083315510977!3d52.379131554412204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609b70dd81623%3A0xcae71b8d3adfd142!2sAmsterdam+Centraal!5e0!3m2!1sen!2sit!4v1544541391379"
+        width="100%" height="300" frameborder="0" style="border:0"></iframe>
+    </div>
+
+    <div class="right formSection">
+      <form id="regForm">
+        <label class="textForm">name: *</label><br>
+        <input type="text" name="name" value=""><br><br>
+
+        <label class="textForm">email: *</label><br>
+        <input type="email" name="mail" value=""><br><br>
+
+        <label class="textForm">message: *</label><br>
+        <textarea name="message"></textarea><br><br>
+        <center>
+          <button id="submitButton" type="submit" class="submitButton" name="submit">Ask us</button>
+        </center>
+      </form>
+    </div>
+
+  </div>
+  <!-- /FORM -->
+
+  <script>
+    $(document).ready(function() {
+      $('.navBar').hide();
+
+      $('.menu').click(function() {
+        $('.navBar').slideToggle();
+      });
+    });
+  </script>
+</body>
+
+</html>

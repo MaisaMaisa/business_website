@@ -1,5 +1,5 @@
 body {
-  background: #d7d7d7;
+  background-color: lightblue;
 }
 
 .navBar {
@@ -16,6 +16,7 @@ body {
   text-align: center;
 }
 
+/*START NAV BAR HOMEPAGE*/
 .bubble a {
   text-decoration: none;
 }
@@ -25,7 +26,7 @@ body {
     inset 0px 0px 15px rgba(0, 0, 0, .5),
     inset 0px 0px 55px rgba(255, 255, 255, .5),
     inset 3px 3px 5px rgba(0, 0, 0, .5),
-    0 0 50px rgba(255, 255, 255, .75);
+    0 0 50px rgba(255, 255, 255, .3);
   border-radius: 100px;
   background: rgba(255, 255, 255, .4);
 }
@@ -146,3 +147,62 @@ body {
 }
 
 /* END BUBBLE 3 */
+/* END NAV BAR HOMEPAGE*/
+/* START NAV BAR REST OF PAGES*/
+.menu1, .menu2, .menu3 {
+  margin: 10px 0;
+}
+
+/* END NAV BAR REST OF PAGES*/
+/* START CONTACT PAGE*/
+h1 {
+  color: yellow;
+}
+
+.formBlock {
+  top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.left, .right {
+  width: 50% !important;
+  margin: 0 20px;
+}
+
+.formBlock iframe {
+  padding-right: 50px;
+}
+
+.formSection {
+  top: 16px;
+  position: relative;
+  align-items: center;
+}
+
+#regForm {
+  text-align: center;
+}
+
+iframe {
+  text-align: center;
+}
+
+input, textarea {
+  width: 274px;
+  height: 50px;
+  font-size: 18px;
+}
+
+textarea {
+  height: 170px !important;
+  resize: none
+}
+
+#submitButton {
+  cursor: pointer;
+}
+
+/* END CONTACT PAGE*/
