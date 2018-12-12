@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
+  <title>Contact</title>
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="./css/livio.css">
+  <link href="https://fonts.googleapis.com/css?family=Gorditas:400,700" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -17,19 +18,19 @@
   <div class="navBar">
 
     <div class="menu1">
-      <a href="">
+      <a href="index.html">
         <h6>home</h6>
       </a>
     </div>
 
     <div class="menu2">
-      <a href="">
+      <a href="gallery.html">
         <h6>gallery</h6>
       </a>
     </div>
 
     <div class="menu3">
-      <a href="">
+      <a href="contact.html">
         <h6>contact</h6>
       </a>
     </div>
@@ -52,21 +53,25 @@
 
     <div class="right formSection">
       <form id="regForm">
-        <label class="textForm">name: *</label><br>
+        <label class="textForm">name: <span style="color:red">*</span></label><br>
         <input type="text" name="name" value=""><br><br>
 
-        <label class="textForm">email: *</label><br>
+        <label class="textForm">email: <span style="color:red">*</span></label><br>
         <input type="email" name="mail" value=""><br><br>
 
-        <label class="textForm">message: *</label><br>
+        <label class="textForm">message: <span style="color:red">*</span></label><br>
         <textarea name="message"></textarea><br><br>
         <center>
           <button id="submitButton" type="submit" class="submitButton" name="submit">Ask us</button>
         </center>
       </form>
     </div>
-
   </div>
+  <div class="duckWrapper">
+    <img id="duck" src="duck.png" alt="">
+  </div>
+
+
   <!-- /FORM -->
 
   <script>
