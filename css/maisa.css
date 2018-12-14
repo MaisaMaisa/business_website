@@ -19,7 +19,10 @@ html {
    background-color: transparent;
 }
    
-
+.topnav button {
+    float: right;
+    height: 47px;
+}
 
 #theDuck {
     
@@ -33,6 +36,7 @@ html {
 .banner {
     width: 100%;
     display:block;
+    background: transparent;
     
 }
 
@@ -85,16 +89,6 @@ html {
     left: 300px;
     color: transparent;
 }
-    
-#bigDuck:hover + .greeting + .circle{
-    display: contents;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 15px;
-    left: 300px;
-    color: transparent;
-    display:block;
-
-}
 
 #bigDuck {
     padding: 0px;
@@ -118,4 +112,16 @@ html {
   left: 250px;
   top: 50px;
   vertical-align: middle
+}
+
+#bigDuck:hover + .greeting + .circle {
+    display: contents;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 15px;
+    left: 300px;
+    color: transparent;
+    display:block;
+    border-color: transparent;
+    background-color: transparent;
+
 }
