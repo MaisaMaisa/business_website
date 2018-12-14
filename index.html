@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duck business</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+
+<body id="body2">
+  <div class="topnav" id="myTopnav">
+    <button class="active">Menu</button>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+  <div id="Library"></div>
+
+  <div class="navBar">
+    <div class="bubble bubble1">
+      <a href="gallery.html">
+        <h6>gallery</h6>
+      </a>
+    </div>
+
+    <div class="bubble bubble2">
+      <a href="contact.html">
+        <h6>contact</h6>
+      </a>
+    </div>
+
+    <div class="bubble bubble3">
+      <a href="index.html">
+        <h6>home</h6>
+      </a>
+    </div>
+  </div>
+
+  <div class="banner">
+    <div class="hero"> </div>
+  </div>
+
+  <div class="content">
+    <p class="about">This is the official website for your future duck purchase.<br> All of the nine ducks on sale come from a special room, defined by the walls of BSSA building, <br>in Amsterdam. Each duck tells a different story of its different
+      owner. <br>That is why each duck is called by the name of its owner. <br>By owning this duck, you do not own the owner. <br>Click on the "Gallery" page to meet all the ducks available.</p>
+
+
+    <marquee><em class="who">The duckdea was born and raised in that special room of BSSA, collectively by Tommie van Heusen, Livio Nocchi, and Maisa Imamović. For further information and conversation, refer to the "Contact" page.</em></marquee>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $('.navBar').hide();
+
+      $('.active').click(function() {
+        $('.bubble').hide();
+        $('.navBar').toggle(0, function() {
+          $('.bubble1').fadeIn(1000, 'linear');
+          $('.bubble2').delay(200).fadeIn(1000, 'linear');
+          $('.bubble3').delay(450).fadeIn(1000, 'linear');
+        })
+      });
+
+    });
+
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+
+</html>
