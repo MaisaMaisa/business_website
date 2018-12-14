@@ -6,10 +6,13 @@
    body {
    margin: 0;
    font-family: 'Raleway', sans-serif;
+   background-color: lightblue;
    }
    .topnav {
    overflow: hidden;
-   background-color: #FFFFFF;
+   background-color: lightblue;
+   
+   
    }
    .topnav a {
    float: right;
@@ -19,14 +22,18 @@
    padding: 14px 16px;
    text-decoration: none;
    font-size: 17px;
+   
    }
    .topnav a:hover {
    background-color: #FFFF00;
    color: black;
    }
    .active {
-   background-color: #6897e7;
+   background-color: lightblue;
    color: black;
+   height: 47px;
+   width: 60px;
+   float: right;
    }
    .topnav .icon {
    display: none;
@@ -55,84 +62,84 @@
    display: flex;
    }
    .textone {   
-   position:relative;    
+   position:absolute;    
    color:black;
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top:100px;
+   top:150px;
    width:30%;
    }
    .texttwo {   
-   position:relative;    
+   position:absolute;    
    color:black;
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top:305px;
+   top:400px;
    width:30%;
    }
    .textthree {   
-   position:relative;    
+   position:absolute;    
    color:black;
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top:510px;
+   top:650px;
    width:30%;
    }
    .textfour {   
-   position:relative;    
+   position:absolute;    
    color:black;
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top:710px;
+   top:900px;
    width:30%;
    }
    .textfive {   
-   position:relative;    
+   position:absolute;    
    color:black;
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top:915px;
+   top:1150px;
    width:30%;
    }
    .textsix {   
-   position:relative;    
+   position:absolute;    
    color:black;
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top:1115px;
+   top:1400px;
    width:30%;
    }
    .textseven {   
-   position:relative;    
+   position:absolute;    
    color:black;
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top: 1320px;
+   top: 1650px;
    width:30%;
    }
    .texteight {   
-   position:relative;    
+   position:absolute;    
    color:black;
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top: 1525px;
+   top: 1900px;
    width:30%;
    }
    .textnine {   
-   position:relative;    
+   position:absolute;    
    color:black;
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top: 1725px;
+   top: 2150px;
    width:30%;
    border-bottom: 10px;
    }
@@ -165,7 +172,32 @@
 	 position: relative;
 	 width:50%;
    }
-   
+   .navBar {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
 
-   
+.navBar h6 {
+  font-size: 22px;
+  text-decoration: none;
+  margin: 10px;
+  text-align: center;
+  font-family: 'Permanent Marker', sans-serif;
+  color: #000000;
+}
+
+.navBar a {
+  text-decoration: none;
+}
+
+.navBar h6:hover {
+  transform: scale(1.2);
+}
+
+.fixedmenu {
+	position: fixed;
+	 
+}
      
