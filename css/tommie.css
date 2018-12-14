@@ -1,6 +1,11 @@
+   * {
+   margin: 0;
+   font-family: 'Raleway', sans-serif;
+   }
+
    body {
    margin: 0;
-   font-family: Arial;
+   font-family: 'Raleway', sans-serif;
    }
    .topnav {
    overflow: hidden;
@@ -55,8 +60,8 @@
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top:80px;
-   width:80%;
+   top:100px;
+   width:30%;
    }
    .texttwo {   
    position:relative;    
@@ -64,8 +69,8 @@
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top:245px;
-   width:80%;
+   top:305px;
+   width:30%;
    }
    .textthree {   
    position:relative;    
@@ -73,8 +78,8 @@
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top:410px;
-   width:80%;
+   top:510px;
+   width:30%;
    }
    .textfour {   
    position:relative;    
@@ -82,8 +87,8 @@
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top:575px;
-   width:80%;
+   top:710px;
+   width:30%;
    }
    .textfive {   
    position:relative;    
@@ -91,8 +96,8 @@
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top:740px;
-   width:80%;
+   top:915px;
+   width:30%;
    }
    .textsix {   
    position:relative;    
@@ -100,8 +105,8 @@
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top:905px;
-   width:80%;
+   top:1115px;
+   width:30%;
    }
    .textseven {   
    position:relative;    
@@ -109,8 +114,8 @@
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top: 1070px;
-   width:80%;
+   top: 1320px;
+   width:30%;
    }
    .texteight {   
    position:relative;    
@@ -118,8 +123,8 @@
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top: 1235px;
-   width:80%;
+   top: 1525px;
+   width:30%;
    }
    .textnine {   
    position:relative;    
@@ -127,17 +132,22 @@
    font-size:1em;
    font-weight:regular;
    left:350px;
-   top: 1400px;
-   width:80%;
+   top: 1725px;
+   width:30%;
+   border-bottom: 10px;
    }
    .textzero {   
-   position:relative;    
+   position:fixed;    
    color:black;
    font-size:1em;
    font-weight:regular;
-   left:200px;
+   left:800px;
    top: 70px;
-   width:80%;
+   width:15%;
+   border: 1px solid black ;
+   margin: 25px;
+   padding: 25px;
+   margin-top: 150px;
    }
    #Library {
       background-image: url('../images/logo22.png') ;
@@ -151,9 +161,11 @@
       background-image: url('../images/logo11.png');
       }
    
+   .h2 {
+	 position: relative;
+	 width:50%;
+   }
    
-   
-   
-   
+
    
      
