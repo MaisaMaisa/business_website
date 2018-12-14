@@ -9,6 +9,11 @@ html, body {
   overflow-x: hidden;
 }
 
+.topnav {
+  position: fixed;
+  top: 0;
+}
+
 .navBar {
   display: flex;
   flex-direction: column;

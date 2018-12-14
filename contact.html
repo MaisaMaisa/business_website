@@ -12,9 +12,14 @@
 </head>
 
 <body>
-  <div class="menu">
-    <h3>menu</h3>
+  <!-- Tommie's menu button -->
+  <div class="topnav" id="myTopnav">
+    <button class="active">Menu</button>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
+  <!-- End of Tommie's menu button -->
 
   <div class="navBar">
 
@@ -68,6 +73,7 @@
       </form>
     </div>
   </div>
+
   <div class="duckWrapper">
     <img id="duck" src="img/duck.png" alt="">
   </div>
@@ -79,7 +85,7 @@
     $(document).ready(function() {
       $('.navBar').hide();
 
-      $('.menu').click(function() {
+      $('.active').click(function() {
         $('.navBar').slideToggle();
       });
     });
