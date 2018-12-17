@@ -1,24 +1,26 @@
 const express = require('express');
-let app = express();
+const app = express();
+const path = require('path');
+const port = process.env.PORT || 3000;
 
-app.use('/css', express.static('css'))
-app.use('/img', express.static('img'))
+app.use('/', express.static(path.join(__dirname, 'public')));
 
-app.get('/', function(req, res) {
-  res.sendFile(__dirname + '/html/pre-home.html');
-  console.log(req.query);
+app.get('/pre-home.html', (req, res) => {
+  res.send('pre-home')
 });
 
-app.get('/index.html', function(req, res) {
-  res.sendFile(__dirname + '/html/index.html')
+app.get('/index.html', (req, res) => {
+  res.send('index')
 });
 
-app.get('/gallery.html', function(req, res) {
-  res.sendFile(__dirname + '/html/gallery.html')
+app.get('/gallery.html', (req, res) => {
+  res.send('gallery')
 });
 
-app.get('/contact.html', function(req, res) {
-  res.sendFile(__dirname + '/html/contact.html')
+app.get('/contact.html', (req, res) => {
+  res.send('contact')
 });
 
-app.listen(3000)
+app.listen(port, () => {
+  console.log(`app.js is listening on port ${port}`)
+});
