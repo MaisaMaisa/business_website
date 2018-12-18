@@ -1,0 +1,422 @@
+html, body {
+  background-color: lightblue;
+  margin: 0;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  overflow-x: hidden;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.navBar h6 {
+  font-size: 22px;
+  text-decoration: none;
+  margin: 10px;
+  text-align: center;
+  font-family: 'Permanent Marker', sans-serif;
+  color: #000000;
+}
+
+.navBar a {
+  text-decoration: none;
+}
+
+.navBar h6:hover {
+  transform: scale(1.2);
+}
+
+/*START NAV BAR HOMEPAGE*/
+.bubble a {
+  text-decoration: none;
+  pointer-events: all;
+}
+
+.bubble {
+  box-shadow: inset 30px 30px 75px rgba(0, 0, 0, .1),
+    inset 0px 0px 15px rgba(0, 0, 0, .5),
+    inset 0px 0px 55px rgba(255, 255, 255, .5),
+    inset 3px 3px 5px rgba(0, 0, 0, .5),
+    0 0 50px rgba(255, 255, 255, .3);
+  border-radius: 100px;
+  background: rgba(255, 255, 255, .4);
+  pointer-events: none;
+}
+
+/* START BUBBLE 1 */
+.bubble1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0;
+  position: relative;
+  align-self: flex-start;
+  left: 100px;
+}
+
+/* glow left right of the bubble */
+.bubble1:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 15px;
+  left: 15px;
+  border-radius: 150px 50px;
+  box-shadow: inset 10px 10px 50px rgba(255, 255, 255, .6);
+}
+
+/* dark circle inside the bubble */
+.bubble1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 170px;
+  left: 15px;
+  top: 15px;
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, .05);
+}
+
+.bubble1 a {
+  position: absolute;
+  top: 50px;
+  left: 23px;
+  cursor: pointer;
+}
+
+/* END BUBBLE 1 */
+/* START BUBBLE 2 */
+.bubble2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0;
+  position: relative;
+  align-items: flex-end;
+  left: 212px;
+  top: -18px;
+}
+
+/* glow left right of the bubble */
+.bubble2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 15px;
+  left: 15px;
+  border-radius: 150px 50px;
+  box-shadow: inset 10px 10px 50px rgba(255, 255, 255, .6);
+}
+
+/* dark circle inside the bubble */
+.bubble2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  border-radius: 170px;
+  left: 11px;
+  top: 13px;
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, .05);
+}
+
+.bubble2 h6 {
+  position: absolute;
+  top: 27px;
+  left: -2px;
+}
+
+/* END BUBBLE 2 */
+/* START BUBBLE 3*/
+.bubble3 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0;
+  position: relative;
+  align-items: flex-end;
+  top: -48px;
+  left: 317px;
+}
+
+/* glow left right of the bubble */
+.bubble3:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  left: 15px;
+  border-radius: 150px 50px;
+  box-shadow: inset 10px 10px 50px rgba(255, 255, 255, .6);
+}
+
+/* dark circle inside the bubble */
+.bubble3:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 170px;
+  left: 11px;
+  top: 11px;
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, .05);
+}
+
+.bubble3 h6 {
+  position: absolute;
+  top: 11px;
+  left: -6px;
+}
+
+/* END BUBBLE 3 */
+/* END NAV BAR HOMEPAGE*/
+/* START NAV BAR REST OF PAGES*/
+.menu1, .menu2, .menu3 {
+  margin: 10px 0;
+}
+
+/* END NAV BAR REST OF PAGES*/
+/* START CONTACT PAGE*/
+h1 {
+  font-family: 'Permanent Marker', sans-serif;
+}
+
+.formBlock {
+  top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.left, .right {
+  width: 50%;
+  margin: 0 20px;
+}
+
+.formBlock iframe {
+  padding-right: 50px;
+}
+
+.formSection {
+  top: 16px;
+  position: relative;
+  align-items: center;
+  color: #000000;
+}
+
+#regForm {
+  text-align: center;
+}
+
+iframe {
+  text-align: center;
+}
+
+label {
+  font-family: 'Permanent Marker', sans-serif;
+}
+
+input, textarea {
+  width: 274px;
+  height: 50px;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+input:focus {
+  outline-color: black;
+}
+
+textarea {
+  height: 170px;
+  resize: none;
+  outline-color: black;
+}
+
+#submitButton {
+  cursor: pointer;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 22px;
+  background-color: #f6d200;
+  border: none;
+  transition: transform 0.5s 0.3s;
+}
+
+#submitButton:hover {
+  -webkit-text-stroke: 0px;
+  color: #ffffff;
+  background-color: #000000;
+  transform: rotate(360deg) scale(1.2);
+}
+
+.duckWrapper {
+  width: 100%;
+  height: 115px;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+#duck {
+  height: 100px;
+  position: relative;
+  animation: swim 8s 1s infinite both linear, jump 3s infinite both linear;
+}
+
+@keyframes swim {
+  from {
+    transform: translateX(-200px);
+  }
+
+  to {
+    transform: translateX(1400px);
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0px;
+  }
+
+  50% {
+    bottom: 10px;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+}
+
+/* END CONTACT PAGE*/
+#body1 {
+  background-color: #ADD8E6;
+  font-family: 'Raleway', sans-serif;
+}
+
+#body2 {
+  background-color: lightblue;
+  font-family: 'Raleway', sans-serif;
+}
+
+.topnav {
+  background-color: transparent;
+}
+
+.topnav button {
+  float: right;
+  height: 47px;
+}
+
+#theDuck {
+  border-style: solid;
+  border-color: blue;
+  padding: 100px;
+  text-align: center;
+  height: 500px;
+}
+
+.banner {
+  width: 100%;
+  display: block;
+  background: transparent;
+}
+
+.hero {
+  min-height: 300px;
+  background-image: url(../also%20good.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content {
+  display: block;
+  bottom: 0;
+  width: 100%;
+}
+
+.about {
+  border-style: solid;
+  border-color: blue;
+  margin: 40px;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.about:hover {
+  transform: scale(1.3);
+}
+
+.who {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+}
+
+/*This is for the pre-home page*/
+.greeting {
+  padding: 500px;
+  display: none;
+  text-align: center;
+  position: relative;
+  left: 300px;
+  color: transparent;
+}
+
+#bigDuck {
+  padding: 0px;
+  position: fixed;
+  left: 300px;
+}
+
+.circle {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-color: lightblue;
+  border-radius: 500%;
+  border-style: solid;
+  border-color: blue;
+  display: table-cell;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 15px;
+  color: black;
+  left: 250px;
+  top: 50px;
+  vertical-align: middle
+}
+
+#bigDuck:hover+.greeting+.circle {
+  display: contents;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 15px;
+  left: 300px;
+  color: transparent;
+  display: block;
+  border-color: transparent;
+  background-color: transparent;
+}

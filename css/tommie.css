@@ -157,7 +157,7 @@
    margin-top: 150px;
    }
    #Library {
-      background-image: url('../images/logo22.png') ;
+      background-image: url('../img/logo22.png') ;
       position: absolute;
       height:43px;
       width: 46px;
@@ -165,7 +165,7 @@
       left: 1px;
       }
       #Library:hover {
-      background-image: url('../images/logo11.png');
+      background-image: url('../img/logo11.png');
       }
    
    .h2 {
